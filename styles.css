@@ -1,0 +1,130 @@
+/* *Poppins Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+:root {
+  --Poppins: "Poppins", sans-serif;
+  --primary-color: #273043;
+  --secondary-color: #dd0426;
+  --light-gray: #969bb1;
+  --light-red: #f02d3a;
+  --whitesmoke: #f0f2f5;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* ! Navigation bar  */
+
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: var(--primary-color);
+  display: flex;
+}
+
+nav > div {
+  width: 50%;
+}
+
+.logo-container {
+  width: 60%;
+}
+
+.logo-bg {
+  width: 80px;
+  background-color: white;
+}
+
+.irvin-dev-logo {
+  height: 55px;
+  display: block;
+  margin: 0 auto;
+}
+
+.link-container {
+  width: 40%;
+  min-width: 500px;
+}
+
+.links-list {
+  width: 100%;
+  height: inherit;
+  list-style: none;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.links-list > li {
+  height: 55px;
+  line-height: 55px;
+}
+
+.links-list a {
+  padding: 10px 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  font: 600 1.7rem var(--Poppins);
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.links-list a:hover {
+  color: var(--secondary-color);
+}
+
+/* ! Welcome Section */
+
+
+
+/* ! Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .link-container {
+    display: none;
+  }
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .link-container {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .link-container {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .link-container {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .link-container {
+    display: block;
+  }
+}
