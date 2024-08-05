@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="home">
     <header>
       <!-- * Navigation Bar -->
       <nav>
@@ -36,8 +36,8 @@
         <!-- * Navbar Links -->
         <div class="link-container">
           <ul class="links-list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me-section">About Me</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Contacts</a></li>
           </ul>
@@ -56,22 +56,82 @@
 
         <!-- * Developer Welcome Information -->
         <div class="hero-container">
-          <p class="greeting">HELLO, MY NAME IS</p>
+          <p class="greeting">Hello, My Name Is</p>
           <h1 class="author-name">John Irvin</h1>
           <p class="specialization">Web Developer</p>
 
           <!-- * Contact Links -->
           <div class="hero-contacts">
-            <a href="https://www.facebook.com/Irvingeanga.30" target="_blank"
+            <a
+              href="https://www.facebook.com/Irvingeanga.30"
+              target="_blank"
+              class="facebook-link"
               ><i class="fa-brands fa-facebook-f" id="facebook"></i>Facebook</a
             >
-            <a href="mailto:johnirvingeanga@gmail.com"
-              ><i class="fa-brands fa-google" id="google"></i>Email</a
+            <a href="mailto:johnirvingeanga@gmail.com" class="email-link"
+              ><i class="fa-brands fa-google" id="google"></i>Gmail</a
             >
           </div>
         </div>
       </section>
-      <section id="about-me-section"></section>
+      <section id="about-me-section">
+        <h2 class="about-me-header">About Me</h2>
+        <div class="personal-info">
+          <article class="about-para">
+            I'm John Irvin Geanga, a dedicated BSIT student at Colegio de
+            Montalban, with a passion for web development. My journey into the
+            world of technology began with a deep curiosity about how websites
+            function and an eagerness to create interactive, user-friendly web
+            applications. Recently, I have completed a comprehensive responsive
+            web development certification course at
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+              target="_blank"
+              ><i>freeCodecamp.org</i></a
+            >. This course provided me with a solid foundation in HTML and CSS,
+            and taught me how to build websites that are both aesthetically
+            pleasing and fully functional across various devices.
+          </article>
+        </div>
+        <div class="other-info-container">
+          <div class="cards">
+            <h3 class="card-header">Personal Information</h3>
+            <div class="info-container">
+              <p>John Irvin C. Geanga</p>
+              <label for="">Full Name</label>
+
+              <p>21</p>
+              <label for="">Age</label>
+
+              <p>June 30, 2003</p>
+              <label for="">Birthday</label>
+
+              <address>
+                Blk 34 Lot 10 Southville 8 Phase 2, San Isidro, Rodriguez, Rizal
+              </address>
+              <label for="">Address</label>
+            </div>
+          </div>
+          <div class="cards">
+            <h3 class="card-header">Skills</h3>
+            <div class="skill-list">
+              <div class="note">
+                <p>
+                  I developed skills in the following programming languages and
+                  technologies while pursuing my BSIT degree
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <img
+              src="./assets/Developer Image 2.png"
+              alt=""
+              class="dev-img-2"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
