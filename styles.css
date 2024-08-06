@@ -202,33 +202,31 @@ main {
   width: 100%;
   background-color: white;
   padding: 20px;
-  border-radius: 5px;
 }
 
 .about-para {
   font: 600 1.8rem var(--Poppins);
   text-align: justify;
+  color: var(--primary-color);
 }
 
 .other-info-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .cards {
   width: 100%;
   height: 100%;
-  background-color: white;
-  border-radius: 5px;
-  overflow: hidden;
+  background-color: var(--whitesmoke);
 }
 
 .card-header {
   width: 100%;
-  background-color: var(--whitesmoke);
+  background-color: white;
   text-align: center;
   padding: 15px;
   box-shadow: 0 1px 3px var(--light-gray);
@@ -239,7 +237,7 @@ main {
 .info-container {
   width: 100%;
   height: 100%;
-  padding: 10px 50px;
+  padding: 10px 50px 30px;
   text-align: center;
 }
 
@@ -263,23 +261,36 @@ main {
 
 .note {
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   border-radius: 5px;
   box-shadow: 0 1px 3px var(--light-gray);
-  background-color: var(--whitesmoke);
+  background-color: white;
   padding: 10px;
 }
 
 .note p {
-  font: bold 1.2rem var(--Poppins);
+  font: normal italic 1.3rem var(--Poppins);
   text-align: justify;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-.dev-img-2 {
+.skills-container {
+  width: 100%;
+  min-height: 10px;
+  display: flex;
+  background-color: white;
+  margin-top: 30px;
+  box-shadow: 0 1px 3px var(--light-gray);
+  border-radius: 5px;
+}
+
+.tech-skills {
   width: 100%;
   height: 100%;
+  padding: 20px 30px;
+  font: bold italic 1.3rem var(--Poppins);
 }
+
 /* ! Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
@@ -332,6 +343,66 @@ main {
   .hero-contacts {
     margin: 70px 0 100px;
   }
+
+  /* ! About Me Section */
+  #about-me-section {
+    padding: 50px 20px;
+  }
+
+  .about-me-header {
+    font: 600 2rem var(--Poppins);
+  }
+
+  .personal-info {
+    margin: 50px 0 20px;
+  }
+
+  .about-para {
+    font: 600 3vw var(--Poppins);
+  }
+
+  .other-info-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-header {
+    font: bold 4vw var(--Poppins);
+  }
+
+  .info-container label {
+    font: normal italic 2.5vw var(--Poppins);
+  }
+
+  .info-container > p,
+  .info-container address {
+    font: bold 3vw var(--Poppins);
+    padding-top: 10px;
+  }
+
+  .info-container {
+    padding: 10px 20px 30px;
+  }
+
+  .note {
+    padding: 10px;
+  }
+
+  .note p {
+    font: normal italic 3vw var(--Poppins);
+  }
+
+  .skill-list {
+    padding: 10px;
+  }
+
+  .skills-container {
+    margin-top: 20px;
+  }
+
+  .tech-skills {
+    padding: 10px 30px;
+    font: bold italic 3vw var(--Poppins);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -378,6 +449,66 @@ main {
   .hero-contacts {
     margin: 70px 0 100px;
   }
+
+  /* ! About Me Section */
+  #about-me-section {
+    padding: 100px 50px;
+  }
+
+  .about-me-header {
+    font: 600 2rem var(--Poppins);
+  }
+
+  .personal-info {
+    margin: 50px 0 20px;
+  }
+
+  .about-para {
+    font: 600 1.8rem var(--Poppins);
+  }
+
+  .other-info-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-header {
+    font: bold 4vw var(--Poppins);
+  }
+
+  .info-container label {
+    font: normal italic 2.5vw var(--Poppins);
+  }
+
+  .info-container > p,
+  .info-container address {
+    font: bold 3vw var(--Poppins);
+    padding-top: 10px;
+  }
+
+  .info-container {
+    padding: 10px 20px 30px;
+  }
+
+  .note {
+    padding: 20px;
+  }
+
+  .note p {
+    font: normal italic 3vw var(--Poppins);
+  }
+
+  .skill-list {
+    padding: 20px;
+  }
+
+  .skills-container {
+    margin-top: 20px;
+  }
+
+  .tech-skills {
+    padding: 10px 50px;
+    font: bold italic 3vw var(--Poppins);
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -398,6 +529,65 @@ main {
 
   .author-name {
     font: bold 15vw var(--time-new-roman);
+  }
+  /* ! About Me Section */
+  #about-me-section {
+    padding: 100px 50px;
+  }
+
+  .about-me-header {
+    font: 600 2rem var(--Poppins);
+  }
+
+  .personal-info {
+    margin: 50px 0 20px;
+  }
+
+  .about-para {
+    font: 600 3vw var(--Poppins);
+  }
+
+  .other-info-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-header {
+    font: bold 4vw var(--Poppins);
+  }
+
+  .info-container label {
+    font: normal italic 2.5vw var(--Poppins);
+  }
+
+  .info-container > p,
+  .info-container address {
+    font: bold 3vw var(--Poppins);
+    padding-top: 10px;
+  }
+
+  .info-container {
+    padding: 10px 20px 30px;
+  }
+
+  .note {
+    padding: 20px;
+  }
+
+  .note p {
+    font: normal italic 3vw var(--Poppins);
+  }
+
+  .skill-list {
+    padding: 20px;
+  }
+
+  .skills-container {
+    margin-top: 20px;
+  }
+
+  .tech-skills {
+    padding: 10px 50px;
+    font: bold italic 3vw var(--Poppins);
   }
 }
 
@@ -444,6 +634,62 @@ main {
 
   .hero-contacts {
     margin: 100px 0 0;
+  }
+
+  /* ! About Me Section */
+  #about-me-section {
+    padding: 100px 50px;
+  }
+
+  .about-me-header {
+    font: 600 2rem var(--Poppins);
+  }
+
+  .personal-info {
+    margin: 50px 0 20px;
+  }
+
+  .about-para {
+    font: 600 1.8rem var(--Poppins);
+  }
+
+  .other-info-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-header {
+    font: bold 2rem var(--Poppins);
+  }
+
+  .info-container label {
+    font: normal italic 1.5rem var(--Poppins);
+  }
+
+  .info-container > p,
+  .info-container address {
+    font: bold 1.5rem var(--Poppins);
+    padding-top: 20px;
+  }
+
+  .info-container {
+    padding: 10px 20px 30px;
+  }
+
+  .note p {
+    font: normal italic 1.3rem var(--Poppins);
+  }
+
+  .skill-list {
+    padding: 30px;
+  }
+
+  .skills-container {
+    margin-top: 30px;
+  }
+
+  .tech-skills {
+    padding: 20px 30px;
+    font: bold italic 1.3rem var(--Poppins);
   }
 }
 
