@@ -925,31 +925,31 @@ main {
     font: italic 2.3vw var(--Poppins);
   }
 
-    /* ! Contact Section */
-    .contacts-wrapper {
-      padding: 50px 50px 0;
-    }
-  
-    .contact-container {
-      margin: 20px 0;
-      height: 100%;
-      flex-direction: column;
-    }
-  
-    .get-in-touch,
-    .socials {
-      width: 100%;
-      padding: 20px 0;
-    }
-  
-    .get-in-touch p {
-      text-align: center;
-      font: bold 11vw var(--time-new-roman);
-    }
-  
-    .socials-list a {
-      font-size: 5.5vw;
-    }
+  /* ! Contact Section */
+  .contacts-wrapper {
+    padding: 50px 50px 0;
+  }
+
+  .contact-container {
+    margin: 20px 0;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .get-in-touch,
+  .socials {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .get-in-touch p {
+    text-align: center;
+    font: bold 11vw var(--time-new-roman);
+  }
+
+  .socials-list a {
+    font-size: 5.5vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1086,15 +1086,15 @@ main {
     font: italic 1.2vw var(--Poppins);
   }
 
-   /* ! Contact Section */
-   .contacts-wrapper {
-    padding: 100px
+  /* ! Contact Section */
+  .contacts-wrapper {
+    padding: 100px;
   }
 
   .contact-container {
     margin: 20px 0;
     height: 100%;
-   flex-direction: row;
+    flex-direction: row;
   }
 
   .get-in-touch,
