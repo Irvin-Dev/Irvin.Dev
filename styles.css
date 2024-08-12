@@ -11,6 +11,7 @@
   --light-gray: #969bb1;
   --light-red: #f02d3a;
   --whitesmoke: #f0f2f5;
+  --midnight: #1e2431;
 }
 
 *,
@@ -35,62 +36,58 @@ body {
 nav {
   width: 100%;
   height: 55px;
-  background-color: #1e2431;
-  display: flex;
+  background-color: var(--midnight);
   position: fixed;
   top: 0;
   left: 0;
-}
-
-nav > div {
-  width: 50%;
+  padding-right: 20px;
 }
 
 .logo-container {
-  width: 60%;
-}
-
-.logo-bg {
   width: 70px;
   background-color: white;
+  display: inline-block;
 }
 
-.irvin-dev-logo {
+.my-logo {
   height: 55px;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
-.link-container {
-  width: 40%;
-  min-width: 500px;
+.list-container {
+  float: right;
+  margin-right: 50px;
 }
 
-.links-list {
-  width: 100%;
-  height: inherit;
+.list-container li {
+  line-height: 60px;
+  float: left;
   list-style: none;
-  display: flex;
-  align-self: center;
-  justify-content: center;
+  padding: 0 20px;
 }
 
-.links-list > li {
-  height: 55px;
-  line-height: 55px;
-}
-
-.links-list a {
-  padding: 10px 20px;
-  text-decoration: none;
-  vertical-align: middle;
-  font: 600 1.7rem var(--Poppins);
+.list-container a {
   color: white;
+  text-decoration: none;
+  font: normal 1.7rem var(--Poppins);
   transition: color 0.3s ease-in-out;
 }
 
-.links-list a:hover {
+.list-container a:hover {
   color: var(--secondary-color);
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  float: right;
+  color: white;
+  font-size: 3rem;
+  line-height: 57px;
 }
 
 /* ! Home Section */
@@ -492,7 +489,7 @@ main {
   padding: 20px;
   color: white;
   font: normal 1.2rem var(--Poppins);
-  background-color: #1e2431;
+  background-color: var(--midnight);
 }
 
 /* ! Media Queries */
@@ -500,13 +497,34 @@ main {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* ! Navigation Bar */
-  .link-container {
-    display: none;
+  .list-container {
+    display: block;
+    position: fixed;
+    clear: right;
+    top: 55px;
+    margin: 0;
+    width: 100%;
+    right: -100%;
+    background-color: var(--light-gray);
+    transition: right 0.5s ease;
   }
 
-  .logo-container {
+  .list-container li {
     width: 100%;
-    display: flex;
+    clear: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .list-container {
+    right: 0;
+  }
+
+  #check:checked ~ .menu-btn {
+    color: var(--secondary-color);
   }
 
   /* ! Home Section */
@@ -643,8 +661,34 @@ main {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   /* ! Navigation Bar */
-  .link-container {
-    display: none;
+  .list-container {
+    display: block;
+    position: fixed;
+    clear: right;
+    top: 55px;
+    margin: 0;
+    width: 100%;
+    right: -100%;
+    background-color: var(--light-gray);
+    transition: right 0.5s ease;
+  }
+
+  .list-container li {
+    width: 100%;
+    clear: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .list-container {
+    right: 0;
+  }
+
+  #check:checked ~ .menu-btn {
+    color: var(--secondary-color);
   }
 
   /* ! Home Section  */
@@ -775,8 +819,28 @@ main {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* ! Navigation Bar */
-  .link-container {
+  .list-container {
     display: block;
+    position: static;
+    clear: none;
+    float: right;
+    top: 55px;
+    margin: 0 50px;
+    width: unset;
+    right: 0;
+    background-color: transparent;
+    transition: none;
+  }
+
+  .list-container li {
+    width: unset;
+    clear: none;
+    float: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: none;
   }
 
   /* ! Home Section */

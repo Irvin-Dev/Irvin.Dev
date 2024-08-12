@@ -1,0 +1,188 @@
+/* *Poppins Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+:root {
+  /* fonts */
+  --Poppins: "Poppins", sans-serif;
+  --time-new-roman: "Times New Roman", sans-serif;
+  /* colors */
+  --primary-color: #273043;
+  --secondary-color: #dd0426;
+  --light-gray: #969bb1;
+  --light-red: #f02d3a;
+  --whitesmoke: #f0f2f5;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 55px;
+}
+
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 20px;
+}
+
+.logo-container {
+  width: 70px;
+  background-color: white;
+  display: inline-block;
+}
+
+.my-logo {
+  height: 55px;
+  margin: 0 auto;
+  display: block;
+}
+
+.list-container {
+  float: right;
+  margin-right: 50px;
+}
+
+.list-container li {
+  line-height: 60px;
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.list-container a {
+  color: white;
+  text-decoration: none;
+  font: normal 1.7rem var(--Poppins);
+  transition: color 0.3s ease-in-out;
+}
+
+.list-container a:hover {
+  color: var(--secondary-color);
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  float: right;
+  color: white;
+  font-size: 3rem;
+  line-height: 57px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .list-container {
+    display: block;
+    position: fixed;
+    clear: right;
+    top: 55px;
+    margin: 0;
+    width: 100%;
+    right: -100%;
+    background-color: var(--light-gray);
+    transition: right 0.5s ease;
+  }
+
+  .list-container li {
+    width: 100%;
+    clear: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .list-container {
+    right: 0;
+  }
+
+  #check:checked ~ .menu-btn {
+    color: var(--secondary-color);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .list-container {
+    display: block;
+    position: fixed;
+    clear: right;
+    top: 55px;
+    margin: 0;
+    width: 100%;
+    right: -100%;
+    background-color: var(--light-gray);
+    transition: right 0.5s ease;
+  }
+
+  .list-container li {
+    width: 100%;
+    clear: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .list-container {
+    right: 0;
+  }
+
+  #check:checked ~ .menu-btn {
+    color: var(--secondary-color);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list-container {
+    display: block;
+    position: static;
+    clear: none;
+    float: right;
+    top: 55px;
+    margin: 0 50px;
+    width: unset;
+    right: 0;
+    background-color: transparent;
+    transition: none;
+  }
+
+  .list-container li {
+    width: unset;
+    clear: none;
+    float: left;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
