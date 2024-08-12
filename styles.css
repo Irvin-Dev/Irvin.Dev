@@ -142,12 +142,22 @@ main {
 .author-name {
   font: bold 7vw var(--time-new-roman);
   color: var(--primary-color);
-  margin: 30px 0 20px;
+  margin: 30px 0 0;
 }
 
 .specialization {
   font: bold 3vw var(--time-new-roman);
   color: var(--light-gray);
+}
+
+.specialization::before {
+  content: "< ";
+  color: var(--secondary-color);
+}
+
+.specialization::after {
+  content: " / >";
+  color: var(--secondary-color);
 }
 
 .quote-container {
@@ -890,7 +900,7 @@ main {
   }
 
   /* ! Project Section */
- 
+
   .project-container {
     padding: 20px 0 0;
     height: 100%;
