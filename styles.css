@@ -51,7 +51,7 @@ nav > div {
 }
 
 .logo-bg {
-  width: 80px;
+  width: 70px;
   background-color: white;
 }
 
@@ -217,8 +217,16 @@ main {
   text-align: justify;
   color: var(--primary-color);
   padding: 30px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0 1px 3px var(--light-gray);
+  border-radius: 5px;
 }
 
+.freecodecamp-link {
+  color: var(--secondary-color);
+  text-decoration: underline var(--secondary-color);
+}
 .other-info-container {
   width: 100%;
   height: 100%;
@@ -286,9 +294,12 @@ main {
 
 .brief-info i {
   float: left;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--secondary-color);
-  padding: 0 20px;
+  padding: 10px 17px;
+  border-radius: 50%;
+  margin: 0 15px 5px 0;
+  background-color: var(--light-gray);
 }
 
 .brief-info p {
@@ -313,8 +324,8 @@ main {
 }
 
 .card-bg {
-  background: var(--whitesmoke)
-    url("./assets/person-working-from-home.png") no-repeat center;
+  background: var(--whitesmoke) url("./assets/person-working-from-home.png")
+    no-repeat center;
   background-size: contain;
 }
 
@@ -480,7 +491,7 @@ main {
   text-align: center;
   padding: 20px;
   color: white;
-  font: normal 1.5rem var(--Poppins);
+  font: normal 1.2rem var(--Poppins);
   background-color: #1e2431;
 }
 
@@ -496,7 +507,6 @@ main {
   .logo-container {
     width: 100%;
     display: flex;
-   
   }
 
   /* ! Home Section */
@@ -560,7 +570,7 @@ main {
   }
 
   .about-para {
-    font: 600 3vw var(--Poppins);
+    font: 600 3.2vw var(--Poppins);
   }
 
   .other-info-container {
@@ -706,11 +716,9 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 
-
   .card-bg {
     display: none;
   }
-
 
   /* ! Project Section */
   #project-section {
@@ -810,7 +818,7 @@ main {
   }
 
   .about-para {
-    font: 600 3vw var(--Poppins);
+    font: 600 2.1vw var(--Poppins);
   }
 
   .other-info-container {
@@ -939,7 +947,6 @@ main {
     font: 600 1.8rem var(--Poppins);
   }
 
-  
   .other-info-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -953,7 +960,6 @@ main {
   .card-bg {
     display: none;
   }
-
 
   /* ! Project Section */
   #project-section {
@@ -1023,5 +1029,4 @@ main {
   .card-bg {
     display: block;
   }
-
 }
