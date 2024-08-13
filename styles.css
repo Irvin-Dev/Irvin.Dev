@@ -508,14 +508,15 @@ main {
 @media only screen and (max-width: 600px) {
   /* ! Navigation Bar */
   .list-container {
+    width: 50%;
+    height: 100vh;
     display: block;
     position: fixed;
     clear: right;
     top: 55px;
     margin: 0;
-    width: 100%;
     right: -100%;
-    background-color: var(--light-gray);
+    background-color: rgba(30, 36, 49, 0.7);
     transition: right 0.5s ease;
   }
 
@@ -672,14 +673,16 @@ main {
 @media only screen and (min-width: 600px) {
   /* ! Navigation Bar */
   .list-container {
+    width: 50%;
+    height: 100vh;
     display: block;
     position: fixed;
     clear: right;
     top: 55px;
     margin: 0;
-    width: 100%;
+    
     right: -100%;
-    background-color: var(--light-gray);
+    background-color: rgba(30, 36, 49, 0.7);
     transition: right 0.5s ease;
   }
 
