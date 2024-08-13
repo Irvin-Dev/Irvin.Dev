@@ -293,26 +293,24 @@ main {
 }
 
 .brief-info {
-  min-height: 50px;
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
 }
 
 .brief-info i {
   float: left;
-  font-size: 2rem;
+  font-size: 40px;
   color: var(--secondary-color);
-  padding: 10px 17px;
-  border-radius: 50%;
-  margin: 0 15px 5px 0;
-  background-color: var(--light-gray);
+  padding: 5px 10px 0 0;
+  line-height: 40px;
 }
 
 .brief-info p {
   text-align: justify;
   color: white;
   font: normal 1.2rem var(--Poppins);
+  line-height: 20px;
 }
 
 .tech-stack {
@@ -680,7 +678,6 @@ main {
     clear: right;
     top: 55px;
     margin: 0;
-    
     right: -100%;
     background-color: rgba(30, 36, 49, 0.7);
     transition: right 0.5s ease;
