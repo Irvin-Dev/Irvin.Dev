@@ -280,7 +280,7 @@ main {
   padding: 20px;
 }
 
-.sub-card-1 > p {
+.sub-card-1 > p:not(.label) {
   text-align: center;
   font: bold 1.4rem var(--Poppins);
 }
@@ -290,7 +290,11 @@ main {
   color: var(--light-red);
   display: block;
   text-align: center;
-  padding-bottom: 15px;
+  background-color: white;
+  display: block;
+  margin: 0 auto 15px;
+  width: 170px;
+  border-top: 2px solid var(--whitesmoke);
 }
 
 .brief-info {
@@ -312,6 +316,7 @@ main {
   color: white;
   font: normal 1.2rem var(--Poppins);
   line-height: 20px;
+  
 }
 
 .tech-stack {
@@ -320,6 +325,7 @@ main {
   display: flex;
   background-color: var(--whitesmoke);
   border-radius: 5px;
+  box-shadow: 0 1px 3px var(--light-gray);
 }
 
 .tech-stack ul {
