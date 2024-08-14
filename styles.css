@@ -285,7 +285,7 @@ main {
   font: bold 1.4rem var(--Poppins);
 }
 
-.sub-card-1 > label {
+.sub-card-1 > .label {
   font: bold italic 1.2rem var(--Poppins);
   color: var(--light-red);
   display: block;
