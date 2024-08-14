@@ -835,6 +835,7 @@ main {
   .list-container {
     display: block;
     position: static;
+    height: unset;
     clear: none;
     float: right;
     top: 55px;
