@@ -164,26 +164,30 @@ main {
 .quote-container {
   margin-top: 50px;
   padding: 25px;
-  width: 100%;
+  width: calc(100% - 10px);
   height: 100%;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
+  background-color: white;
+  border: 2px solid var(--midnight);
+  box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
 }
 
 .quote {
   font: normal 2.7rem var(--Poppins);
-  color: white;
+  color: var(--midnight);
 }
 
 .quote i {
   margin-right: 10px;
+  color: var(--secondary-color);
 }
 
 .philosopher-name {
   text-align: end;
   padding: 20px 25px 0;
   font: normal 2rem var(--Poppins);
-  color: white;
+  color: var(--midnight);
 }
 
 /* ! About Me Section */
@@ -215,7 +219,6 @@ main {
   margin: 50px 0 20px;
   width: 100%;
   background-color: white;
-  border-radius: 5px;
   overflow: hidden;
   background-color: var(--whitesmoke);
 }
@@ -227,8 +230,7 @@ main {
   padding: 30px;
   background-color: white;
   margin: 20px;
-  box-shadow: 0 1px 3px var(--light-gray);
-  border-radius: 5px;
+  border: 2px solid var(--midnight);
 }
 
 .freecodecamp-link {
@@ -247,7 +249,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: var(--whitesmoke);
-  border-radius: 5px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -272,12 +274,14 @@ main {
 
 .sub-card-1,
 .sub-card-2 {
-  width: 100%;
+  width: 95%;
   min-height: 100px;
   background-color: white;
-  box-shadow: 0 1px 3px var(--light-gray);
-  border-radius: 5px;
+  border: 2px solid var(--midnight);
   padding: 20px;
+  box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(221, 4, 38, 0.94);
 }
 
 .sub-card-1 > p:not(.label) {
@@ -316,7 +320,6 @@ main {
   color: white;
   font: normal 1.2rem var(--Poppins);
   line-height: 20px;
-  
 }
 
 .tech-stack {
@@ -373,8 +376,7 @@ main {
   height: 100%;
   padding: 10px 10px 0;
   background-color: white;
-  box-shadow: 0 0 5px var(--light-gray);
-  border-radius: 5px;
+  border: 2px solid var(--midnight);
 }
 
 .project-img {
@@ -423,9 +425,8 @@ main {
   text-align: center;
   padding: 10px;
   color: white;
-  border-radius: 5px;
   text-decoration: none;
-  font: bold 1.4rem var(--Poppins);
+  font: normal 1.5rem var(--Poppins);
   background-color: var(--secondary-color);
   transition: background-color 0.3s ease-in-out;
 }
@@ -589,7 +590,7 @@ main {
 
   .philosopher-name {
     padding: 10px 25px 0;
-    font: normal 4vw var(--Poppins);
+    font: normal italic 4vw var(--Poppins);
   }
 
   /* ! About Me Section */
@@ -755,7 +756,7 @@ main {
 
   .philosopher-name {
     padding: 10px 25px 0;
-    font: normal 3vw var(--Poppins);
+    font: normal italic 3vw var(--Poppins);
   }
 
   /* ! About Me Section */
@@ -885,7 +886,7 @@ main {
 
   .philosopher-name {
     padding: 10px 25px 0;
-    font: normal 2.5vw var(--Poppins);
+    font: normal italic 2.5vw var(--Poppins);
   }
   /* ! About Me Section */
   #about-me-section {
@@ -1007,7 +1008,7 @@ main {
 
   .philosopher-name {
     padding: 15px 25px 0;
-    font: normal 1.3vw var(--Poppins);
+    font: normal italic 1.3vw var(--Poppins);
   }
 
   /* ! About Me Section */
