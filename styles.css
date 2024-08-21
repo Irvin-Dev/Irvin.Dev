@@ -358,8 +358,7 @@ main {
   padding: 20px;
   display: flex;
   background-color: var(--whitesmoke);
-
-  box-shadow: 0 1px 3px var(--light-gray);
+  box-shadow: 0 0 3px var(--light-gray);
 }
 
 .tech-stack ul {
